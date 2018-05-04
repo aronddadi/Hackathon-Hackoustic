@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.sound.min.js"></script>
+  </head>
+  <body>
+    <div id="vol">
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script>
+      const socket = io('https://10.20.194:9091');
+      socket.on('test',(data)=>console.log(data));
+      socket.on('connect', function () {
+          //Never gets here
+          console.log('connected');
+      });      
+      socket.emit('volume',{volume:45});
+    </script>
+
+
+  <script type="text/javascript">
+    var mic;
+    mic = new p5.AudioIn();
+    mic.start();
+    setInterval(()=>{
+       console.log(mic.getLevel());
+       document.getElementById('vol').innerHTML=(mic.getLevel()*1000)*5;// <-- ici en pourcentage
+       socket.emit('volume',{volume:(mic.getLevel()*1000)*5});
+
+     },700);
+  </script>
+
+  </body>
+</html>

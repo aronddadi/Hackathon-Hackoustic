@@ -1,0 +1,211 @@
+body,html{
+    width:100%;
+    overflow-x:hidden;
+    margin:0;
+    font-family:'Ubuntu',sans-serif;
+}
+
+.theme{
+  background-image: url("images/fdblue.jpg");
+  background-repeat: round;
+}
+
+#soundBox{
+    margin:10px auto;
+    height:150px;
+    width:60%;
+    border-radius:5px;
+}
+
+.red{
+    background-color:#e15554;
+}
+.green {
+    background-color: #58bc82;
+}
+.orange {
+    background-color: #c57026;
+}
+
+.textRed{
+    color:#e15554;
+}
+.textGreen {
+    color: #58bc82;
+}
+.textOrange {
+    color: #c57026;
+}
+
+#sendData{
+    padding:10px 10px ;
+    border-radius:5px;
+}
+
+
+.jwz{
+    border:solid 0.5px rgba(0,0,0,0.2);
+    padding:30px 0px;
+}
+
+.reseau_sociaux{
+  width: 100%;
+  color: white !important;
+  padding-top: 2px;
+  /*border top: 1px solid #2e2c87;*/
+}
+
+.fa{
+  color: white;
+}
+
+.menu{
+  color: white !important;
+  margin: 0;
+  background: #4CA1AF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4CA1AF, #C4E0E5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4CA1AF, #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.nav-item.nav-link{
+  color: white !important;
+}
+
+.nav-item.nav-link:hover{
+  color: black !important;
+}
+
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.nav-item{
+color: black !important;
+}
+
+.nav-item:hover{
+color: white !important;
+}
+.unlist {
+    list-style-type: none;
+}
+.emoticon {
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+}
+
+/*page son*/
+.addMap{
+  color: white;
+  background-color: #153882;
+}
+
+.addMap:hover{
+  background-color: #0079BE;
+  color: white;
+}
+
+.calme{
+  color: #58bc82;
+}
+
+.normal{
+  color: #c57026;
+}
+
+.nuisible{
+  color: #e15554;
+}
+
+/* The switch - the box around the slider */
+.switch {
+ position: relative;
+ display: inline-block;
+ width: 60px;
+ height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: #ccc;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+ height: 26px;
+ width: 26px;
+ left: 4px;
+ bottom: 4px;
+ background-color: white;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+input:checked + .slider {
+ background-color: #2196F3;
+}
+
+input:focus + .slider {
+ box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+ -webkit-transform: translateX(26px);
+ -ms-transform: translateX(26px);
+ transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+ border-radius: 34px;
+}
+
+.slider.round:before {
+ border-radius: 50%;
+}
+
+/*POUR LA PAGE PARAMETRES*/
+
+.parametres{
+  margin-top: 4%;
+}
+.notifications{
+  font-size: 27px;
+  margin-top: 3px;
+  font-weight: bold;
+}
+
+.form-group{
+  margin: 5% 0% 0% 5px;
+}
+.joke{
+  font-family:'Amatic SC', sans-serif;
+  /*color: white;*/
+  font-size: 25px;
+}
+
+.badgeRed{
+  background-color: #e15554;
+}
+
+.badgeGreen{
+  background-color: #58bc82;
+}
+
+.badgeOrange{
+  background-color: #c57026;
+}
